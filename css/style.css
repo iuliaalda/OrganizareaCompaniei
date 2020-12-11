@@ -1762,7 +1762,12 @@ input[type="radio"] .styled:checked + label::after {
         font-size: 17px;
         line-height: 30px;
     }
-
+#remove_padding h2{
+    padding:0px 0px 0px 0px;
+}
+#imgtip{
+    width: 570px;
+}
 .titlepage2 h2 {
     padding: 0px 0px 6px 0px;
     font-size: 30px;
