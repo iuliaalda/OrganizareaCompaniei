@@ -1763,22 +1763,30 @@ input[type="radio"] .styled:checked + label::after {
         line-height: 30px;
     }
 
-.about .titlepage2 h2 {
+.titlepage2 h2 {
     padding: 0px 0px 6px 0px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     color: #050303;
     line-height: 46px;
     border-bottom: #0fc690 solid 1px;
-    width: 410px;
+    width: 500px;
     margin: 0 auto;
-    margin-bottom: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    
 }
-
-.about .ul {
-    font-size: 17px;
+.titlepage2 span {
     color: # 3d3c3c;
+    font-size: 19px;
+    line-height: 30px;
+}
+ul {
+    font-size: 17px;
+    color: #3d3c3c;
+}
+li {
+    font-size: 17px;
+    color: #3d3c3c;
 }
 .about .img-box {
     text-align: center;
