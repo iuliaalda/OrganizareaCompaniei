@@ -1740,7 +1740,10 @@ input[type="radio"] .styled:checked + label::after {
     text-align: center;
     padding-bottom: 60px;
 }
-
+.about .titlepage2 {
+    /*text-align: center;*/
+    padding-bottom: 60px;
+}
     .about .titlepage h2 {
         padding: 0px 0px 6px 0px;
         font-size: 40px;
