@@ -1,0 +1,48 @@
+.navi {
+    position: relative;
+    top: 80%;
+    right: 0;
+    left: 0;
+    width: 500px;
+    display: table;
+    margin: 70px 270px 0px 270px;
+    transform: translateY(-50%);
+}
+
+     .navi a {
+        position: relative;
+        width: 40%;
+        display: table-cell;
+        text-align: center;
+        color: #949494;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        padding: 10px 20px;
+        transition: 0.2s ease color;
+    }
+
+        .navi a:before, .navi a:after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: 0.2s ease transform;
+        }
+
+       .navi a:before {
+            top: 0;
+            left: 10px;
+            width: 6px;
+            height: 6px;
+        }
+
+        .navi a:after {
+            top: 5px;
+            left: 18px;
+            width: 4px;
+            height: 4px
+        }
+.navi a:hover {
+    color: black;
+}
