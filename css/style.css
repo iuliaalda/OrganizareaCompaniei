@@ -1509,8 +1509,19 @@ li {
 
 
 /** end about section **/
-
-
+.quiz{
+    position:relative;
+    height:500px;
+}
+.quiz h3{
+    font-size: 27px;
+}
+.quiz p{
+    font-size:23px;
+}
+.q{
+   align-content:center;
+}
 /** service section **/
 
 .service {

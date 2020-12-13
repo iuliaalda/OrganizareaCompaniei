@@ -39,7 +39,7 @@
                                 <navg class="main-menu">
                                     <ul class="menu-area-main">
                                         <li class="active"> <a href="index.html">Home</a> </li>
-                                        <li> <a href="about.html">Ce este structura organizationala?</a> </li>
+                                        <li> <a href="about.html">Ce este structura organizațională?</a> </li>
                                         <li> <a href="tipuri.html">Tipuri de structuri</a> </li>
                                         <li> <a href="etape.html">Etapele de dezvoltare</a> </li>
                                         <li> <a href="test.html">Chestionar</a> </li>
@@ -55,20 +55,473 @@
     </header>
     <!-- end header -->
     <!-- about  -->
-    <div id="abt" class="about top_layer">
+    <div id="abt" class="about top_layer" style="padding-bottom:50px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="titlepage">
+                    <div class="titlepage2" style="padding:0;">
                         <h2>Chestionar - testati-va cunostintele!</h2>
                     </div>
                 </div>
             </div>
-            
         </div>
-        
     </div>
-    <!-- end abouts -->
+    <!--prima intrebare-->
+
+    <div class="quiz">
+        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+            <h3>1. Care dintre următoarele nu este un avantaj al unei organizații funcționale?</h3>
+            <p>Un răspuns corect</p>
+            <hr />
+
+            <div id='block-11' style='padding: 10px;'>
+                <label for='option-11' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Responsabilitatea
+                </label>
+                <span id='result-11'></span>
+            </div>
+            <hr />
+
+            <div id='block-12' style='padding: 10px;'>
+                <label for='option-12' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Claritatea
+                </label>
+                <span id='result-12'></span>
+            </div>
+            <hr />
+
+            <div id='block-13' style='padding: 10px;'>
+                <label for='option-13' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Specializarea
+                </label>
+                <span id='result-13'></span>
+            </div>
+            <hr />
+
+            <div id='block-14' style='padding: 10px;'>
+                <label for='option-14' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Consistența
+                </label>
+                <span id='result-14'></span>
+            </div>
+            <hr />
+            <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+        </div>
+        <a id='showanswer1'></a>
+        <script>
+            //    The function evaluates the answer and displays result
+            function displayAnswer1() {
+            if (document.getElementById('option-11').checked) {
+            document.getElementById('block-11').style.border = '3px solid red'
+            document.getElementById('result-11').style.color = 'red'
+            document.getElementById('result-11').innerHTML = 'Incorect!'
+            showCorrectAnswer1()
+            }
+            if (document.getElementById('option-12').checked) {
+            document.getElementById('block-12').style.border = '3px solid red'
+            document.getElementById('result-12').style.color = 'red'
+            document.getElementById('result-12').innerHTML = 'Incorect!'
+            showCorrectAnswer1()
+            }
+            if (document.getElementById('option-13').checked) {
+            document.getElementById('block-13').style.border = '3px solid red'
+            document.getElementById('result-13').style.color = 'red'
+            document.getElementById('result-13').innerHTML = 'Incorect!'
+            showCorrectAnswer1()
+            }
+            if (document.getElementById('option-14').checked) {
+            document.getElementById('block-14').style.border = '3px solid limegreen'
+            document.getElementById('result-14').style.color = 'limegreen'
+            document.getElementById('result-14').innerHTML = 'Corect!'
+            }
+            }
+            // the functon displays the link to the correct answer
+            function showCorrectAnswer1() {
+            let showAnswer1 = document.createElement('p')
+            showAnswer1.innerHTML = 'Arată răspunsul corect'
+            showAnswer1.style.position = 'relative'
+            showAnswer1.style.top = '-180px'
+            showAnswer1.align = 'center'
+            showAnswer1.style.fontSize = '18px'
+            document.getElementById('showanswer1').appendChild(showAnswer1)
+            showAnswer1.addEventListener('click', () => {
+            document.getElementById('block-14').style.border = '3px solid limegreen'
+            document.getElementById('result-14').style.color = 'limegreen'
+            document.getElementById('result-14').innerHTML = 'Corect'
+            document.getElementById('showanswer1').removeChild(showAnswer1)
+            })
+            }
+        </script>
+    </div>
+
+    <div class="quiz">
+        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+            <h3>2. Care dintre următoarele caracteristici este un avantaj major a organizației matriciale?</h3>
+            <p>Un răspuns corect</p>
+            <hr />
+
+            <div id='block2-11' style='padding: 10px;'>
+                <label for='option2-11' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option2-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Flexibilitate
+                </label>
+                <span id='result2-11'></span>
+            </div>
+            <hr />
+
+            <div id='block2-12' style='padding: 10px;'>
+                <label for='option2-12' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option2-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Respect
+                </label>
+                <span id='result2-12'></span>
+            </div>
+            <hr />
+
+            <div id='block2-13' style='padding: 10px;'>
+                <label for='option2-13' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option2-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Individualism
+                </label>
+                <span id='result2-13'></span>
+            </div>
+            <hr />
+
+            <div id='block2-14' style='padding: 10px;'>
+                <label for='option2-14' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option2-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Înțelegere
+                </label>
+                <span id='result2-14'></span>
+            </div>
+            <hr />
+            <button type='button' onclick='displayAnswer2()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+        </div>
+        <a id='showanswer2'></a>
+        <script>
+            //    The function evaluates the answer and displays result
+            function displayAnswer2() {
+            if (document.getElementById('option2-11').checked) {
+            document.getElementById('block2-11').style.border = '3px solid limegreen'
+            document.getElementById('result2-11').style.color = 'limegreen'
+            document.getElementById('result2-11').innerHTML = 'Corect!'
+            }
+            if (document.getElementById('option2-12').checked) {
+            document.getElementById('block2-12').style.border = '3px solid red'
+            document.getElementById('result2-12').style.color = 'red'
+            document.getElementById('result2-12').innerHTML = 'Incorect!'
+            showCorrectAnswer2()
+            }
+            if (document.getElementById('option2-13').checked) {
+            document.getElementById('block2-13').style.border = '3px solid red'
+            document.getElementById('result2-13').style.color = 'red'
+            document.getElementById('result2-13').innerHTML = 'Incorect!'
+            showCorrectAnswer2()
+            }
+            if (document.getElementById('option2-14').checked) {
+            document.getElementById('block2-14').style.border = '3px solid red'
+            document.getElementById('result2-14').style.color = 'red'
+            document.getElementById('result2-14').innerHTML = 'Incorect!'
+            showCorrectAnswer2()
+            }
+            }
+            // the functon displays the link to the correct answer
+            function showCorrectAnswer2() {
+            let showAnswer2 = document.createElement('p')
+            showAnswer2.innerHTML = 'Arată răspunsul corect'
+            showAnswer2.style.position = 'relative'
+            showAnswer2.style.top = '-180px'
+            showAnswer2.align = 'center'
+            showAnswer2.style.fontSize = '18px'
+            document.getElementById('showanswer2').appendChild(showAnswer2)
+            showAnswer2.addEventListener('click', () => {
+            document.getElementById('block2-11').style.border = '3px solid limegreen'
+            document.getElementById('result2-11').style.color = 'limegreen'
+            document.getElementById('result2-11').innerHTML = 'Corect'
+            document.getElementById('showanswer2').removeChild(showAnswer2)
+            })
+            }
+        </script>
+    </div>
+
+    <div class="quiz">
+        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+            <h3>3. Dintre posibilele avantaje ale unei deschideri înguste de control, care dintre următoarele e cel mai posibil să ducă la o destratificare mai mare? </h3>
+            <p>Un răspuns corect</p>
+            <hr />
+
+            <div id='block3-11' style='padding: 10px;'>
+                <label for='option3-11' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option3-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Delegarea poate fi mai bine manageriată
+                </label>
+                <span id='result3-11'></span>
+            </div>
+            <hr />
+
+            <div id='block3-12' style='padding: 10px;'>
+                <label for='option3-12' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option3-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Cei din vârful organizației au mai puțin control vizibil asupra subordonaților
+                </label>
+                <span id='result3-12'></span>
+            </div>
+            <hr />
+
+            <div id='block3-13' style='padding: 10px;'>
+                <label for='option3-13' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option3-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Costurile pot fi reduse, pe măsură ce nu mai este nevoie de anumite funcții manageriale
+                </label>
+                <span id='result3-13'></span>
+            </div>
+            <hr />
+
+            <div id='block3-14' style='padding: 10px;'>
+                <label for='option3-14' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option3-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Nevoia de comunicare scrisă este redusă
+                </label>
+                <span id='result3-14'></span>
+            </div>
+            <hr />
+            <button type='button' onclick='displayAnswer3()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+        </div>
+        <a id='showanswer3'></a>
+        <script>
+            //    The function evaluates the answer and displays result
+            function displayAnswer3() {
+            if (document.getElementById('option3-11').checked) {
+            document.getElementById('block3-11').style.border = '3px solid red'
+            document.getElementById('result3-11').style.color = 'red'
+            document.getElementById('result3-11').innerHTML = 'Incorect!'
+            showCorrectAnswer3()
+            }
+            if (document.getElementById('option3-12').checked) {
+            document.getElementById('block3-12').style.border = '3px solid red'
+            document.getElementById('result3-12').style.color = 'red'
+            document.getElementById('result3-12').innerHTML = 'Incorect!'
+            showCorrectAnswer3()
+            }
+            if (document.getElementById('option3-13').checked) {
+            document.getElementById('block3-13').style.border = '3px solid limegreen'
+            document.getElementById('result3-13').style.color = 'limegreen'
+            document.getElementById('result3-13').innerHTML = 'Corect!'
+
+            }
+            if (document.getElementById('option3-14').checked) {
+            document.getElementById('block3-14').style.border = '3px solid red'
+            document.getElementById('result3-14').style.color = 'red'
+            document.getElementById('result3-14').innerHTML = 'Incorect!'
+            showCorrectAnswer3()
+            }
+            }
+            // the functon displays the link to the correct answer
+            function showCorrectAnswer3() {
+            let showAnswer3 = document.createElement('p')
+            showAnswer3.innerHTML = 'Arată răspunsul corect'
+            showAnswer3.style.position = 'relative'
+            showAnswer3.style.top = '-180px'
+            showAnswer3.align = 'center'
+            showAnswer3.style.fontSize = '18px'
+            document.getElementById('showanswer3').appendChild(showAnswer3)
+            showAnswer3.addEventListener('click', () => {
+            document.getElementById('block3-13').style.border = '3px solid limegreen'
+            document.getElementById('result3-13').style.color = 'limegreen'
+            document.getElementById('result3-13').innerHTML = 'Corect'
+            document.getElementById('showanswer3').removeChild(showAnswer3)
+            })
+            }
+        </script>
+    </div>
+
+    <div class="quiz">
+        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+            <h3>4. Unul dintre avantajele principale ale unui sistem managerial mai 'centralizat' se crede a fi controlul asupra luarea deciziilor. Care dintre următoarele este folosit pentru a întări afirmația prezentată?</h3>
+            <p>Un răspuns corect</p>
+            <hr />
+
+            <div id='block4-11' style='padding: 10px;'>
+                <label for='option4-11' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option4-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Precizie mai mare în luarea de decizii
+                </label>
+                <span id='result4-11'></span>
+            </div>
+            <hr />
+
+            <div id='block4-12' style='padding: 10px;'>
+                <label for='option4-12' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option4-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Avantajul ajută la consistența și predictibilitatea în organizație
+                </label>
+                <span id='result4-12'></span>
+            </div>
+            <hr />
+
+            <div id='block4-13' style='padding: 10px;'>
+                <label for='option4-13' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option4-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Compania are o abordare focalizată pe luarea de decizii
+                </label>
+                <span id='result4-13'></span>
+            </div>
+            <hr />
+
+            <div id='block4-14' style='padding: 10px;'>
+                <label for='option4-14' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option4-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Angajații au tendința să fie mai satisfăcuți cu nivelurile lor de responsabilitate
+                </label>
+                <span id='result4-14'></span>
+            </div>
+            <hr />
+            <button type='button' onclick='displayAnswer4()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+        </div>
+        <a id='showanswer4'></a>
+        <script>
+            //    The function evaluates the answer and displays result
+            function displayAnswer4() {
+            if (document.getElementById('option4-11').checked) {
+            document.getElementById('block4-11').style.border = '3px solid red'
+            document.getElementById('result4-11').style.color = 'red'
+            document.getElementById('result4-11').innerHTML = 'Incorect!'
+            showCorrectAnswer4()
+            }
+            if (document.getElementById('option4-12').checked) {
+            document.getElementById('block4-12').style.border = '3px solid limegreen'
+            document.getElementById('result4-12').style.color = 'limegreen'
+            document.getElementById('result4-12').innerHTML = 'Corect!'
+
+            }
+            if (document.getElementById('option4-13').checked) {
+            document.getElementById('block4-13').style.border = '3px solid red'
+            document.getElementById('result4-13').style.color = 'red'
+            document.getElementById('result4-13').innerHTML = 'Incorect!'
+            showCorrectAnswer4()
+            }
+            if (document.getElementById('option4-14').checked) {
+            document.getElementById('block4-14').style.border = '3px solid red'
+            document.getElementById('result4-14').style.color = 'red'
+            document.getElementById('result4-14').innerHTML = 'Incorect!'
+            showCorrectAnswer4()
+            }
+            }
+            // the functon displays the link to the correct answer
+            function showCorrectAnswer4() {
+            let showAnswer4 = document.createElement('p')
+            showAnswer4.innerHTML = 'Arată răspunsul corect'
+            showAnswer4.style.position = 'relative'
+            showAnswer4.style.top = '-180px'
+            showAnswer4.align = 'center'
+            showAnswer4.style.fontSize = '18px'
+            document.getElementById('showanswer4').appendChild(showAnswer4)
+            showAnswer4.addEventListener('click', () => {
+            document.getElementById('block4-12').style.border = '3px solid limegreen'
+            document.getElementById('result4-12').style.color = 'limegreen'
+            document.getElementById('result4-12').innerHTML = 'Corect'
+            document.getElementById('showanswer4').removeChild(showAnswer4)
+            })
+            }
+        </script>
+    </div>
+
+    <div class="quiz">
+        <div style='transform: scale(0.65); position: relative; top: -100px;' class="q">
+            <h3>5. Există câțiva factori care trebuie să fie stabiliți pentru ca delegarea să fie efectivă. Care dintre următoarele trebuie să fie 'activ/ă' pentru a promova delegarea efectivă?</h3>
+            <p>Un răspuns corect</p>
+            <hr />
+
+            <div id='block4-11' style='padding: 10px;'>
+                <label for='option4-11' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option4-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Comunicarea bună
+                </label>
+                <span id='result4-11'></span>
+            </div>
+            <hr />
+
+            <div id='block4-12' style='padding: 10px;'>
+                <label for='option4-12' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option4-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Un mediu de lucru plăcut
+                </label>
+                <span id='result4-12'></span>
+            </div>
+            <hr />
+
+            <div id='block4-13' style='padding: 10px;'>
+                <label for='option4-13' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option4-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Ajutor/suport adecvat
+                </label>
+                <span id='result4-13'></span>
+            </div>
+            <hr />
+
+            <div id='block4-14' style='padding: 10px;'>
+                <label for='option4-14' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option4-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Acces la IT
+                </label>
+                <span id='result4-14'></span>
+            </div>
+            <hr />
+            <button type='button' onclick='displayAnswer4()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+        </div>
+        <a id='showanswer4'></a>
+        <script>
+            //    The function evaluates the answer and displays result
+            function displayAnswer4() {
+            if (document.getElementById('option4-11').checked) {
+            document.getElementById('block4-11').style.border = '3px solid red'
+            document.getElementById('result4-11').style.color = 'red'
+            document.getElementById('result4-11').innerHTML = 'Incorect!'
+            showCorrectAnswer4()
+            }
+            if (document.getElementById('option4-12').checked) {
+            document.getElementById('block4-12').style.border = '3px solid red'
+            document.getElementById('result4-12').style.color = 'red'
+            document.getElementById('result4-12').innerHTML = 'Inorect!'
+            showCorrectAnswer4()
+            }
+            if (document.getElementById('option4-13').checked) {
+            document.getElementById('block4-13').style.border = '3px solid limegreen'
+            document.getElementById('result4-13').style.color = 'limegreen'
+            document.getElementById('result4-13').innerHTML = 'Corect!'
+            
+            }
+            if (document.getElementById('option4-14').checked) {
+            document.getElementById('block4-14').style.border = '3px solid red'
+            document.getElementById('result4-14').style.color = 'red'
+            document.getElementById('result4-14').innerHTML = 'Incorect!'
+            showCorrectAnswer4()
+            }
+            }
+            // the functon displays the link to the correct answer
+            function showCorrectAnswer4() {
+            let showAnswer4 = document.createElement('p')
+            showAnswer4.innerHTML = 'Arată răspunsul corect'
+            showAnswer4.style.position = 'relative'
+            showAnswer4.style.top = '-180px'
+            showAnswer4.align = 'center'
+            showAnswer4.style.fontSize = '18px'
+            document.getElementById('showanswer4').appendChild(showAnswer4)
+            showAnswer4.addEventListener('click', () => {
+            document.getElementById('block4-13').style.border = '3px solid limegreen'
+            document.getElementById('result4-13').style.color = 'limegreen'
+            document.getElementById('result4-13').innerHTML = 'Corect'
+            document.getElementById('showanswer4').removeChild(showAnswer4)
+            })
+            }
+        </script>
+    </div>
+
+
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
