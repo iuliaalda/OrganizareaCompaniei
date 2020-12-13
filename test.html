@@ -436,86 +436,86 @@
             <p>Un răspuns corect</p>
             <hr />
 
-            <div id='block4-11' style='padding: 10px;'>
-                <label for='option4-11' style=' padding: 5px; font-size: 20px;'>
-                    <input type='radio' name='option' id='option4-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            <div id='block5-11' style='padding: 10px;'>
+                <label for='option5-11' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option5-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
                     Comunicarea bună
                 </label>
-                <span id='result4-11'></span>
+                <span id='result5-11'></span>
             </div>
             <hr />
 
-            <div id='block4-12' style='padding: 10px;'>
-                <label for='option4-12' style=' padding: 5px; font-size: 20px;'>
-                    <input type='radio' name='option' id='option4-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            <div id='block5-12' style='padding: 10px;'>
+                <label for='option5-12' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option5-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
                     Un mediu de lucru plăcut
                 </label>
-                <span id='result4-12'></span>
+                <span id='result5-12'></span>
             </div>
             <hr />
 
-            <div id='block4-13' style='padding: 10px;'>
-                <label for='option4-13' style=' padding: 5px; font-size: 20px;'>
-                    <input type='radio' name='option' id='option4-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            <div id='block5-13' style='padding: 10px;'>
+                <label for='option5-13' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option5-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
                     Ajutor/suport adecvat
                 </label>
-                <span id='result4-13'></span>
+                <span id='result5-13'></span>
             </div>
             <hr />
 
-            <div id='block4-14' style='padding: 10px;'>
-                <label for='option4-14' style=' padding: 5px; font-size: 20px;'>
-                    <input type='radio' name='option' id='option4-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            <div id='block5-14' style='padding: 10px;'>
+                <label for='option5-14' style=' padding: 5px; font-size: 20px;'>
+                    <input type='radio' name='option' id='option5-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
                     Acces la IT
                 </label>
-                <span id='result4-14'></span>
+                <span id='result5-14'></span>
             </div>
             <hr />
-            <button type='button' onclick='displayAnswer4()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+            <button type='button' onclick='displayAnswer5()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
         </div>
-        <a id='showanswer4'></a>
+        <a id='showanswer5'></a>
         <script>
             //    The function evaluates the answer and displays result
-            function displayAnswer4() {
-            if (document.getElementById('option4-11').checked) {
-            document.getElementById('block4-11').style.border = '3px solid red'
-            document.getElementById('result4-11').style.color = 'red'
-            document.getElementById('result4-11').innerHTML = 'Incorect!'
-            showCorrectAnswer4()
+            function displayAnswer5() {
+            if (document.getElementById('option5-11').checked) {
+            document.getElementById('block5-11').style.border = '3px solid red'
+            document.getElementById('result5-11').style.color = 'red'
+            document.getElementById('result5-11').innerHTML = 'Incorect!'
+            showCorrectAnswer5()
             }
-            if (document.getElementById('option4-12').checked) {
-            document.getElementById('block4-12').style.border = '3px solid red'
-            document.getElementById('result4-12').style.color = 'red'
-            document.getElementById('result4-12').innerHTML = 'Inorect!'
-            showCorrectAnswer4()
+            if (document.getElementById('option5-12').checked) {
+            document.getElementById('block5-12').style.border = '3px solid red'
+            document.getElementById('result5-12').style.color = 'red'
+            document.getElementById('result5-12').innerHTML = 'Inorect!'
+            showCorrectAnswer5()
             }
-            if (document.getElementById('option4-13').checked) {
-            document.getElementById('block4-13').style.border = '3px solid limegreen'
-            document.getElementById('result4-13').style.color = 'limegreen'
-            document.getElementById('result4-13').innerHTML = 'Corect!'
+            if (document.getElementById('option5-13').checked) {
+            document.getElementById('block5-13').style.border = '3px solid limegreen'
+            document.getElementById('result5-13').style.color = 'limegreen'
+            document.getElementById('result5-13').innerHTML = 'Corect!'
             
             }
-            if (document.getElementById('option4-14').checked) {
-            document.getElementById('block4-14').style.border = '3px solid red'
-            document.getElementById('result4-14').style.color = 'red'
-            document.getElementById('result4-14').innerHTML = 'Incorect!'
-            showCorrectAnswer4()
+            if (document.getElementById('option5-14').checked) {
+            document.getElementById('block5-14').style.border = '3px solid red'
+            document.getElementById('result5-14').style.color = 'red'
+            document.getElementById('result5-14').innerHTML = 'Incorect!'
+            showCorrectAnswer5()
             }
             }
             // the functon displays the link to the correct answer
-            function showCorrectAnswer4() {
-            let showAnswer4 = document.createElement('p')
-            showAnswer4.innerHTML = 'Arată răspunsul corect'
-            showAnswer4.style.position = 'relative'
-            showAnswer4.style.top = '-180px'
-            showAnswer4.align = 'center'
-            showAnswer4.style.fontSize = '18px'
-            document.getElementById('showanswer4').appendChild(showAnswer4)
-            showAnswer4.addEventListener('click', () => {
-            document.getElementById('block4-13').style.border = '3px solid limegreen'
-            document.getElementById('result4-13').style.color = 'limegreen'
-            document.getElementById('result4-13').innerHTML = 'Corect'
-            document.getElementById('showanswer4').removeChild(showAnswer4)
+            function showCorrectAnswer5() {
+            let showAnswer5 = document.createElement('p')
+            showAnswer5.innerHTML = 'Arată răspunsul corect'
+            showAnswer5.style.position = 'relative'
+            showAnswer5.style.top = '-180px'
+            showAnswer5.align = 'center'
+            showAnswer5.style.fontSize = '18px'
+            document.getElementById('showanswer5').appendChild(showAnswer5)
+            showAnswer5.addEventListener('click', () => {
+            document.getElementById('block5-13').style.border = '3px solid limegreen'
+            document.getElementById('result5-13').style.color = 'limegreen'
+            document.getElementById('result5-13').innerHTML = 'Corect'
+            document.getElementById('showanswer5').removeChild(showAnswer5)
             })
             }
         </script>
